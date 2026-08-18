@@ -1,57 +1,73 @@
 # Deliverum One
 
-Minimal static website for **Deliverum One**.
+Minimal static website for [deliverumone.com](https://deliverumone.com).
 
-Deliverum One helps delivery and PMO teams do more with less through practical AI agents, automation and experienced experts in the loop.
+## Positioning
 
-## Website
+**We turn complex initiatives into delivered outcomes.**
 
-Production: https://deliverumone.com
+Deliverum One takes clear ownership of execution and helps teams work together to get important work delivered.
 
-The site intentionally keeps the public proposition concise. The current positioning focuses on three things:
+The website is intentionally minimal: one hero message, one supporting sentence, and direct contact details.
 
-- **Delivery intelligence** — agents that evaluate project and programme health and surface what needs attention.
-- **Delivery co-pilots** — practical support for programme managers, PMO teams and delivery leaders.
-- **Experts in the loop** — Deliverum One SMEs provide judgement and delivery expertise where automation alone is not enough.
-
-## Structure
+## Repository structure
 
 ```text
 index.html   # Production homepage
 README.md    # Repository documentation
 ```
 
-There is no framework, build process or dependency stack. The homepage is deliberately implemented as a single static HTML file.
+There is no framework, package manager, build step, or dependency stack. The site is a single static HTML file.
+
+## Updating the website
+
+The production source is `index.html` on the `main` branch.
+
+To update it manually through GitHub:
+
+1. Open `index.html`.
+2. Select **Edit this file**.
+3. Replace the existing contents with the new version.
+4. Select **Commit changes**.
+5. Commit directly to `main`.
+
+If the repository is connected to Cloudflare Pages, Cloudflare should detect the new commit and deploy it.
 
 ## Local preview
 
-From the repository directory:
+If you have the repository locally, run:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then open `http://localhost:8080`.
+Then open:
 
-## Deployment
+```text
+http://localhost:8080
+```
 
-The repository is intended to deploy through **Cloudflare Pages** connected to GitHub.
+## Design principles
 
-Recommended settings:
+Keep the site:
 
-- Framework preset: `None`
-- Build command: leave empty
-- Build output directory: `/`
-- Production branch: `main`
+- minimal;
+- fast;
+- responsive;
+- typography-led;
+- free of unnecessary dependencies;
+- focused on the proposition rather than detailed service descriptions.
 
-With Git integration enabled, changes pushed to `main` can be deployed automatically by Cloudflare Pages.
+Current visual direction:
 
-## Updating the site
-
-For normal content and design changes, edit `index.html` and push the change to `main`. Keep the site lightweight and avoid adding dependencies unless they provide a clear benefit.
+- warm off-white background;
+- near-black typography;
+- muted green accent;
+- generous whitespace;
+- oversized hero typography.
 
 ## Contact
 
 hello@deliverumone.com
 
-© 2026 Deliverum One.
+© Deliverum One
